@@ -1,0 +1,49 @@
+create table patientcontent
+(
+patientid varchar2(15) primary key,
+password varchar2(15) not null,
+patientname varchar2(50) not null,
+age varchar2(3) not null,
+bloodgroup varchar2(10) not null,
+gender varchar2(10) not null,
+city varchar2(30) not null,
+undergone_operation varchar2(30),
+heartrate_systole varchar2(30),
+heartrate_diastole varchar2(30)
+);
+
+create table patientcontentencrypted
+(
+patientid varchar2(30) primary key,
+password varchar2(30) not null,
+patientname varchar2(50) not null,
+age varchar2(30) not null,
+bloodgroup varchar2(30) not null,
+gender varchar2(30) not null,
+city varchar2(30) not null,
+undergone_operation varchar2(30),
+heartrate_systole varchar2(30),
+heartrate_diastole varchar2(30),
+patienid varchar2(15) not null
+
+);
+
+select  from patientcontent where patientid=1 and password='qwerty2'
+
+select patientid,
+password,
+patientname,
+age,
+bloodgroup,
+gender,
+city,
+undergone_operation,
+heartrate_systole,
+heartrate_diastole
+ from PATIENTCONTENTencrypted;
+
+DROP TABLE Patientcontentencrypted;
+
+
+
+

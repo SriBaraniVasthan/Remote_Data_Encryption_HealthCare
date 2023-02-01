@@ -1,0 +1,11 @@
+select patientid,
+password,
+patientname,
+age,
+bloodgroup,
+gender,
+city,
+undergone_operation,
+heartrate_systole,
+heartrate_diastole
+ from PATIENTCONTENTencrypted;

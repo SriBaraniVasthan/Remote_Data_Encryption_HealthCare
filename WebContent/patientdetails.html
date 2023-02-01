@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Patient Details</title>
+<script>
+function validate()
+{
+	var id=document.getElementById("patientid").value;
+	var pass=document.getElementById("password").value;
+	if(id=="" && pass=="")
+		{
+		alert("FILL THE DETAILS");
+		return false;
+		}
+	
+	return true;
+	}
+</script>
+</head>
+<body style="background-color:cyan">
+<form action="Myservlet4" method="post" onsubmit="return validate()">
+<center>
+<table cellspacing="25px">
+<tr>
+<td>Patient ID:</td>
+<td><input type="text" name="patientid" id="patientid"/></td>
+</tr>
+<tr>
+<td>PASSWORD:</td>
+<td><input type="password" name="password" id="password"/></td>
+</tr>
+<tr>
+<td><input type="submit" name="getdetails" id="password" value="GET DETAILS" /></td>
+</tr> 
+</table>
+</center>
+</form>
+</body>
+
+</body>
+</html>
